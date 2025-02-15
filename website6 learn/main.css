@@ -1,0 +1,210 @@
+*{ 
+Margin:0;
+Padding:0;
+Box-sizing: border-box;
+Font-family: 'PP mori';
+}
+
+html,body{
+Width:100%;
+Height:100%;
+}
+
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(1738962114955[1]-min.png);
+}
+.page1 h1{
+    font-size: 10vw;
+    margin-left: 10%;
+    padding-top: 15%;
+    background-image: linear-gradient( rgb(254, 255, 255) 75%, rgb(177, 183, 239));
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent; 
+    animation: h1move 1s ease-in-out;  
+}
+.page1 h2{
+    font-size: 10vw;
+    text-align: right;
+    margin-right: 10%;
+    padding-bottom: 100px;
+    background-image: linear-gradient( rgb(254, 255, 255) , rgb(177, 183, 239)37%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    animation: h2move 1s ease-in-out; 
+}
+
+@keyframes h1move{
+    0%{
+        margin-left: -100%;
+    }
+    100%{
+        margin-left: 10%;
+    }
+}
+@keyframes h2move{
+    0%{
+        margin-right: -100%;
+    }
+    100%{
+        margin-right: 10%;
+    }
+}
+
+
+
+.page1 .menu{
+    margin-top: 2vw;
+    height: 6vw;
+    min-height: 55px;
+    width: 70%;
+    background: #0b00372f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate(20%,0);
+    padding: 2vw;
+    border-radius: 5px;
+    opacity: 100%;
+    animation: fadee .3s ease-in-out;
+}
+@keyframes fadee{
+    0%{
+        width:0px;
+        opacity: 0%;
+    }
+    100%{
+        width: 70%;
+        opacity: 100%;
+    }
+}
+.page1 h4{
+    color: rgb(238, 228, 255);
+    font-size:4.5vw;
+    font-weight: 300;
+}
+.page1 p{
+    color: rgb(255, 247, 240);
+    font-size:12px;
+    font-weight: 200;
+    position: absolute;
+    align-self: flex-end;
+    bottom: 5%;
+    padding-left: 0.3vw;
+}
+.page1  select{
+    font-size: 4vw;
+    background-color: rgb(92, 80, 255);
+    color: rgb(213, 225, 255);
+    border-color: rgba(64, 13, 184, 0.485);
+    border-width: 2px;
+    border-radius: 2px;
+    box-shadow: 0 2px 0px rgba(31, 0, 92, 0.622);
+    padding: 5px;
+    transition: background-color 0.1s ;
+}
+.page1  select:hover{
+    background-color: rgb(69, 60, 197);
+}
+
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(1738962114955[1]-min.png);
+    background-position: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page2 .calculation{
+    height: 30vh;
+    width: 350px;
+    margin-top: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.page2 button{
+    background: linear-gradient(rgb(92, 80, 255),rgb(70, 61, 193));
+    height: 8vw;
+    max-height: 30px;
+    width: 45%;
+    color: rgb(236, 230, 255);
+    font-size: 100%;
+    font-weight: 500;
+    border-color: rgba(61, 56, 147, 0.364);
+    border-radius: 2px;
+    box-shadow:0px 2px 0 0 rgb(40, 9, 123);
+    padding-top: 0;
+    transition: all .3s ;
+}
+.page2 button:hover{
+    width: 60%;
+    border-radius: 6px;
+    letter-spacing: 2px;
+
+}
+.page2 h3{
+    background-image: linear-gradient( rgb(254, 255, 255) 55%, rgb(177, 183, 239)75%);
+    background-size: 100%;
+    font-size: 25px;
+    margin-top: 44px;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.page2 .calculation span{
+    background: linear-gradient(rgb(92, 80, 255),rgb(70, 61, 193));
+    border: none;
+    outline: none;
+    margin-top: -20px;
+    height: 30px;
+    width:70px;
+    color:whitesmoke ;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    
+}
+.page2 .calculation span::after{
+    content: '';
+    height: 10px;
+    width: 10px;
+    color: aliceblue;
+}
+.page2 .CGPA{
+    color: rgba(175, 218, 255, 0.133);
+    font-size: 150px;
+    font-weight: 900;
+    margin-top: 15vh;
+    filter: blur(5px);
+}
+.page2 .end{
+    height: 30px;
+    width: 80%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+    transition: all 0.4s;
+}
+.page2 .end img{
+    height: 20px;
+}
+.page2 .end h4{
+    color: rgba(240, 248, 255, 0.485);
+    font-size: 20px;
+}
